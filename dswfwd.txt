@@ -1,0 +1,51 @@
+.container {
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial;
+    font-size: 16px;
+    color: Black;
+    background-color: #ffffff;
+    margin-left: 620px;
+}
+
+#add {
+    color: crimson;
+}
+
+input {
+    border-radius: 10px;
+    border: 2px crimson solid;
+}
+
+h1 {
+    color: crimson;
+    font-family: monospace;
+}
+
+ul {
+    list-style: none===;
+    padding: 0;
+    margin: 0;
+    width: 700px;
+}
+
+li {
+    border: 2px solid crimson !important;
+    background: rgba(128, 128, 128, .5);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    width: 500px;
+}
+
+li span {
+    padding-left: 10px;
+    padding-right: 200px;
+}
+
+button {
+    color: white;
+    background: crimson;
+}
