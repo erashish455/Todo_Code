@@ -9,13 +9,14 @@ body {
     background-color: #ffffff;
 }
 
-#add {
+
+/* #add {
     color: rgb(231, 223, 225);
     padding-left: 20px;
     padding-right: 20px;
     background: blanchedalmond;
     font-size: larger;
-}
+} */
 
 #add:hover {
     background-color: rgb(31, 109, 199);
@@ -80,9 +81,18 @@ button {
 
 .input button {
     float: left;
+    color: rgb(231, 223, 225);
+    padding-left: 20px;
+    padding-right: 20px;
+    background: blanchedalmond;
+    font-size: larger;
 }
 
 .input button:hover {
     background-color: #ffffff;
     color: crimson;
+}
+
+#reset {
+    margin-left: 12px;
 }

@@ -1,15 +1,17 @@
+var everything = $('body').html()
 $(document).ready(function() {
     $("#todo").focus();
 
     function addItem() {
-        $("#todo-items").append("<li><input type='checkbox' class='done'/><span>" + $("#todo").val() + "</span><button class='delete'>Delete</button><button class='edit'>Edit</button></li>");
-        $("#todo").val("");
-    }
+        if ($("#todo").val() !== "") {
+            $("#todo-items").append("<li><input type='checkbox' class='done'/><span>" + $("#todo").val() + "</span><button class='delete'>Delete</button><button class='edit'>Edit</button></li>");
+            $("#todo").val("");
 
-    // $("#todo").keydown(function(e) {
-    //     if (e.which == 13)
-    //         addItem();
-    // });
+        } else {
+            alert('please write something')
+        }
+
+    }
 
     $("#add").click(addItem);
 
@@ -53,3 +55,11 @@ $(document).ready(function() {
         }
     });
 });
+
+
+
+$('#reset').click(function() {
+    $(".text-left").empty();
+    $(".doneTask").empty();
+
+})
